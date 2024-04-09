@@ -1,0 +1,37 @@
+{
+    "ele-intro":[
+        {
+            "title":" Elephant introduction",
+            "text":"Sri Lankan elephants stand as an iconic symbol of the island's rich biodiversity and cultural heritage. Renowned for their distinct behavioral patterns and social structures, these majestic creatures play a pivotal role in the ecological balance of the country's diverse landscapes. As the largest subspecies of the Asian elephant, Sri Lankan elephants are characterized by their relatively smaller size, distinctive domed forehead, and more prominent ears. Revered in local folklore and mythology, these elephants are deeply ingrained in Sri Lanka's cultural fabric, symbolizing strength, wisdom, and resilience.",
+            "text2":"The elephants of Sri Lanka inhabit a variety of ecosystems, from dense forests and grasslands to the vicinity of ancient reservoirs. Despite facing threats such as habitat loss and human-elephant conflict, conservation efforts and protected areas have contributed to the preservation of these magnificent creatures. Visitors to Sri Lanka have the unique opportunity to witness these elephants in their natural habitats, whether in the lush expanses of Udawalawe National Park, where herds freely roam, or during the awe-inspiring gatherings at Minneriya and Kaudulla National Parks, where the elephants converge around ancient tanks during the dry season. Exploring the world of Sri Lankan elephants unveils not only a captivating wildlife experience but also fosters a deeper appreciation for the delicate balance between humans and nature on this enchanting island."
+        }
+    ]
+    ,
+
+    "ele-details":[
+        {
+            "title1":"Threat 1",
+            "title2":"Human-Elephant Conflict (HEC)",
+            "text1":"Human-Elephant Conflict is a significant threat to elephants in Sri Lanka, arising from the competition for space and resources between expanding human populations and elephants. As humans encroach upon traditional elephant habitats for agriculture and development, confrontations occur, leading to property damage, crop raids, and, in some cases, loss of human lives.",
+            "title3":"Consequences",
+            "text2":"The consequences of HEC are profound, resulting in negative impacts on both humans and elephants. Elephants may be injured or killed in retaliation, and communities suffer economic losses due to crop destruction. The conflict creates a negative perception of elephants, making conservation efforts more challenging, and can lead to a decline in elephant populations over time.",       
+            "title4":"Mitigation Mechanisms",
+            "text3" :" Sri Lanka employs various mechanisms to address Human-Elephant Conflict. This includes the establishment of wildlife corridors and buffer zones to provide safe passage for elephants. The implementation of early warning systems, such as elephant-proof trenches and electric fences around agricultural areas, helps prevent confrontations. Community-based initiatives focus on improving local livelihoods and promoting coexistence, with compensation schemes for crop damage and educational programs to raise awareness about elephant behavior and conservation."
+        }
+    ]
+,
+
+    "ele-behavior":[
+        {
+            
+            "title1":"Threat 2",
+            "title2":"Habitat Loss and Degradation",
+            "text1":"Habitat loss and degradation pose a significant threat to elephants in Sri Lanka as a result of urbanization, agriculture expansion, and infrastructure development. The conversion of natural habitats into human-dominated landscapes fragments elephant habitats, limiting their access to crucial resources such as water and forage.",
+            "title3":"Consequences",
+            "text2":"The consequences of habitat loss and degradation are dire for elephants. Restricted access to suitable habitats can lead to malnutrition, dehydration, and increased",
+            "title4":"Mitigation Mechanisms"
+            
+
+        }
+    ]
+}

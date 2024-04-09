@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <header>
+        
+        <div class="sidenav">
+            
+            <h4 class="SriLankanWildlife">Wildlife</h4>
+            <a href="index.html">Home</a>
+            <a href="index2.html">Sri lanka wildlife introduction</a>
+            <a href="index3.html">Department of Wildlife Conservation</a>
+            <a href="index4.html">Sri lankan leopard</a>
+            <a href="index5.html">Lankan Elephants</a>
+            <a href="index6.html">Lankan Birds</a>
+            <a href="index7.html">Animals </a>
+        </div>
+        
+        
+    </header>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Dashboard</h1>
+        <div class="newsletter-subscriptions">
+            <h2>Newsletter Subscriptions</h2>
+            <ul id="subscribedEmails"></ul>
+        </div>
+    </div>
+
+
+    
+    <button onclick="openEditor('index.json')">home page</button>
+    <button onclick="openEditor('index2.json')">sri lanakn wildlife page</button>
+    <button onclick="openEditor('index3.json')">department of wildlife coservation page</button>
+    <button onclick="openEditor('index4.json')">leopard page</button>
+    <button onclick="openEditor('index5.json')">elephant page</button>
+    <button onclick="openEditor('index6.json')">birds page</button>
+    <button onclick="openEditor('index7.json')">animals page</button>
+    <button onclick="openEditor('yala.json')">yala national park</button>
+    <button onclick="openEditor('Willpattuwa.json')"> Wilpattu national park</button>
+ 
+    
+    <div id="editor" class="editor-container">
+        <textarea id="jsonTextArea" rows="10" cols="50"></textarea>
+        <button onclick="saveChangesToLocal()">Save Changes</button>
+        <button onclick="closeEditor()">Cancel</button>
+    </div>
+
+
+  
+    
+</body>
+<script src="dash.js"></script>
+"></script>
+</html>

@@ -1,0 +1,1651 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: #43f04300;
+    min-height: 100vh;
+    overflow-x: hidden;
+     
+}
+
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    display: flex; /* Added for positioning the label */
+    justify-content: center; /* Center label horizontally */
+    align-items: center; /* Center label vertically */
+}
+
+.slider-label {
+    display: none; /* Hide label by default */
+    color: #000; /* Label color */
+    font-size: 10px; /* Adjust size as needed */
+}
+
+input:checked + .slider .slider-label {
+    display: block; /* Show label when switch is active */
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.SriLankanWildlife{
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+    margin-left: 50px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* White text color */
+    padding: 6px 8px; /* Padding for spacing around the text */
+    border: 2px solid rgb(255, 255, 255); /* Adding a white border */
+    border-radius: 10px; /* Rounded corners for the border */
+    margin: 0 10px; /* Margin for spacing between links */
+    font-weight: 600; /* Bold font weight */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adding a semi-transparent background */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+.navigation a:hover, 
+.navigation a.active {
+    background: rgb(134, 219, 100);
+    color: #f9f9f9;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #587919;
+}
+
+.text {
+    position: absolute;
+    font-size: 5em;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2) ;
+    background-image: url('C:\Users\Shahid\Desktop\this is my final assignment\DALL·E 2024-01-18 16.45.45 - A tall and vertically oriented panoramic background image representing wildlife in Sri Lanka. The image should be rich in detail, capturing a vertical.png');
+    background-size: cover;
+    background-attachment: fixed; /* Optional: This makes the background image fixed during scroll */
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    
+}
+
+@media screen and (max-width:1465px) {
+        
+    nav.navigation a{
+        display: none;
+    }
+    .SriLankanWildlife{
+        display: none;
+    }
+    div.sidenav{
+        display: block;
+    }
+}
+
+
+.sidenav {
+    height: 100%;
+    width:100px;
+    position: fixed;
+    z-index: 1; 
+    top:0px;
+    left:0;
+    background-color: rgba(98, 137, 41, 0.753);
+    overflow-x: hidden;
+    padding-top: 5px;
+    display: none;
+
+}
+.sidenav h4{
+    font-size: 34px;
+}
+
+
+.sidenav a{
+    
+    text-decoration: underline;
+    font-size: 15px;
+    color: rgb(250, 248, 247);
+    display: block;
+    padding: 10px 15px 30px 10px;
+    cursor: pointer;
+    padding-left: 5px;
+    font-style:inherit;
+
+    
+    
+       
+}
+.sidenav a:hover{
+    color: rgba(251, 195, 40, 0.779);
+    transition: all o.5s ease 0s; 
+}
+
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+    
+}
+
+
+
+
+.sec h2 {
+    font-size: 3em;
+    color: #140606ac;
+    padding: 30px 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
+
+}
+
+.sec p {
+    font-size: 20px;
+    color:  #d5e7b2;
+    font-weight: 500;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+
+.sec {
+    background-image: url('trrreback.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Optional: This makes the background image fixed during scroll */
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 10px;
+    position: relative;
+    overflow: hidden; /* To contain the video within the section */
+    padding: 100px;
+}
+
+
+
+@media screen and (max-width:600px){
+    .sec {
+        margin-top: -420px;
+    }
+  
+}
+
+
+
+    .sec p {
+        font-size: 19px;
+        color: #d5e7b2;
+        font-weight: 400;
+        margin-left: 40px;
+    }
+        
+    
+
+    
+
+
+
+.sec h2 {
+     font-size: 3em;
+    color:  #d5e7b2;
+    padding: 30px 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Adds shadow to text */
+
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff00;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(102, 187, 106, 0);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(102, 187, 106);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns layout for larger screens */
+    }
+}
+
+.firstpimg{
+    background-image: url('trrreback.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Optional: This makes the background image fixed during scroll */
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 100px;
+    overflow: hidden; /* To contain the video within the section */
+   
+    
+}
+@media (max-width: 600px) {
+    .firstpimg p, .firstpimg ul{
+        margin-left: 40px;
+        font-size: 15px;
+        
+    }
+    .firstpimg img{
+        padding-left: 45px;
+    }
+    .secondpimg img{
+        padding-left: 45px;
+    }
+}
+
+
+
+.firstpimg h2{
+    font-size: 4em;
+    color:  #d5e7b2;
+    padding: 30px 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Adds shadow to text */
+  
+
+}
+.firstpimg h3{
+    font-size: 3em;
+    color:  #d5e7b2;
+    padding: 30px 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Adds shadow to text */
+
+}
+
+.firstpimg p{
+    font-size: 20px;
+    color:  #d5e7b2;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+   
+
+
+.firstpimg ul{
+    font-size: 20px;
+    color:  #d5e7b2;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
+    background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+.secondpimg {
+    background-image: url('trrreback.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Optional: This makes the background image fixed during scroll */
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 100px;
+    overflow: hidden; /* To contain the video within the section */
+
+}
+
+@media (max-width: 600px) {
+    .secondpimg p, .secondpimg ul{
+        margin-left: 50px;
+        font-size: 15px;
+        
+    }
+}
+
+
+.secondpimg h2{
+    font-size: 3em;
+    color:  #d5e7b2;
+    padding: 30px 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Adds shadow to text */
+
+
+
+}
+.secondpimg h3{
+    font-size: 3em;
+    color:  #d5e7b2;
+    padding: 30px 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Adds shadow to text */
+
+}
+
+.secondpimg p{
+    font-size: 20px;
+    color:  #d5e7b2;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+    
+    
+    
+
+
+.secondpimg ul{
+    font-size: 20px;
+    color:  #d5e7b2;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
+    background-color: rgba(0, 0, 0, 0.5);
+
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.ordered-list{
+    background-image: url('trrreback.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Optional: This makes the background image fixed during scroll */
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 100px;
+    overflow: hidden; /* To contain the video within the section */
+    
+}
+
+.ordered-list h2{
+    font-size: 3em;
+    color:  #d5e7b2;
+    padding: 30px 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Adds shadow to text */
+
+}
+
+.ordered-list p{
+    font-size: 20px;
+    color: #d5e7b2;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    .ordered-list p, .ordered-list ul, .ordered-list ol{
+        margin-left: 50px;
+        font-size: 15px;
+        
+    }
+}
+
+
+.ordered-list ol{
+    font-size: 20px;
+    color:  #d5e7b2;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ordered-list ul{
+    font-size: 20px;
+    color:  #d5e7b2;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text */
+    background-color: rgba(0, 0, 0, 0.5);}
+
+footer{
+    background-color: rgb(46, 130, 31);
+    color: rgb(82, 135, 32);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+   
+}
+
+
+
+
+
+
+/*NEW PAGE2*/
+
+.white-background{
+    background-color: rgba(158, 179, 84, 0.916);
+    background-image: url("./desktop-wallpaper.....-1024x576.jpg");
+}
+
+.SriLankanWildlife {
+    margin: 0;
+}
+
+
+.wildlife-location {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #fdf8f8;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.wildlife-location h1{
+padding-top: 90px;
+text-align: center;
+color: white;
+
+}
+
+.wildlife-location img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 30px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.flex p{
+    padding-left: 10px;
+    font-size: 19px;
+    line-height: 25px;
+    color: rgb(244, 244, 244);
+    font-style: oblique;
+    
+}
+
+.flex iframe{
+    padding-left: 10px;
+   padding-bottom: 10px;
+    
+}
+
+.wildlife-location a{
+    text-align: center;
+    padding: 15px 15px;
+    margin-left: 40px;
+    color: rgb(248, 247, 245);
+    display: flex;
+    background-color: rgb(95, 116, 62);
+    margin-right: 790px;
+    text-decoration: none;
+}
+.wildlife-location a:hover {
+    color: rgb(15, 15, 15);
+    transition: all o.5s ease 0s;
+}
+
+@media (max-width: 600px) {
+    .wildlife-location h1{
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+    .wildlife-location img{
+        padding-left: 70px;
+        padding-top: 10px;
+       
+}
+.flex{
+    display: block;
+}
+.flex p iframe{
+    width: 300px;
+    height: 400px;
+    padding-right: 20px;
+}
+.flex p{
+    padding-left: 70px;
+}
+
+.wildlife-location a{
+    margin-left: 100px;
+    padding: 20px 140px;
+    font-size: 10px;
+
+    
+}
+
+}
+@media (max-width: 480px) {
+    .flex p iframe{
+        width: 200px;
+        height: 200px;
+        margin-left: -10px;
+    } 
+}
+
+
+.wildlife-summary {
+    
+    border-collapse: collapse;
+    margin: 20px 0;
+    margin-left: 150px;
+    margin-top: 50px;
+    background-color: #dce8b4;
+    align-items: center;
+  
+}
+
+@media (max-width: 600px) {
+    .wildlife-summary{
+        margin-left: 110px;
+        margin-right: 20px;
+    }
+}
+
+.wildlife-summary th, .wildlife-summary td {
+    border: 1px solid #b5c08c;
+    padding: 8px;
+    text-align: left;
+}
+
+.wildlife-summary th {
+    background-color: #a1a985;
+}
+
+.wildlife-summary img {
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+}
+
+.wildlife-summary tfoot td {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .wildlife-summary img {
+        max-width: 100%;
+    }
+}
+
+footer{
+    background-color: rgb(53, 103, 15);
+    color: white;
+    padding: 50px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/*NEW PAGE3*/
+
+
+.introduction {
+    padding-top: 90px;
+ background-color: #47781984;
+ background-image: url("./background3.png");
+ width: auto;
+ height: auto;
+    
+}
+
+@media screen and (max-width:600px){
+    .introduction{
+        padding-top: 20px;
+    }
+    .introduction h2{
+        padding-left: 110px;
+    }
+
+    .introduction p{
+        margin-left: 100px;
+        font-size: 15px;
+    }
+
+    .gallery h2{
+        padding-left: 90px;
+    }
+
+    .gallery p{
+        margin-left: 70px;
+        font-size: 15px;
+        margin-right: 0px;
+
+    }
+}
+    
+.introduction h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #e6f19f;
+}
+.introduction p{
+    font-size: 18px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+    color: rgb(228, 240, 181);
+    padding-bottom: 90px;
+}
+
+.gallery{
+    background-color: #1d2923;
+    padding-top: 50px;
+}
+
+.gallery h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+    color:  #e6f19f;
+    text-align: center;
+}
+
+
+.gallery p{
+    font-size: 19px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+    padding-bottom: 80px;
+    color: rgb(228, 240, 181)
+
+}
+
+.gallery-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-left: 85px;
+ 
+}
+
+@media screen and (max-width:600px){
+    .gallery-container{
+        display: block;
+    }
+    .gallery-item {
+        padding: 2px;
+        margin-left: 20px;
+        margin-right: 20px;
+       
+    }
+
+    .map-location iframe{
+        min-height: 400px;
+        padding-left: 120px;
+        padding-right: 10px;
+    }
+}
+
+.gallery-item {
+    flex-basis: calc(33.333% - 10px);
+    border: 1px solid #d6d4d4;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+.gallery-item h3{
+    color: rgb(228, 240, 181)
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.map-location h2{
+    text-align: center;
+    color:  #0e0e0e;
+    padding-top: 20px;
+}
+
+.map-location iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-item {
+        flex-basis: calc(50% - 10px);
+    
+    }
+  
+    }
+
+
+
+/* NEW PAGE4*/
+
+.orange-background{ 
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #ebcc67; /* Light background to enhance readability */
+    }
+
+
+.hero-banner img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjusts height automatically to maintain aspect ratio */
+    max-height: 400px; /* Maximum height; adjust as needed */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    display: block;
+}
+
+
+main {
+    max-width: 800px; /* Adjust as needed */
+    margin: auto;
+    padding: 20px;
+}
+
+
+.leopard-intro {
+
+    background-color: #a87811;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Soft rounded corners */
+    box-shadow: 0 2px 5px rgb(0, 0, 0); /* Subtle shadow for depth */
+    text-align: center; /* Centering text */
+}
+
+@media screen and (max-width: 600px) {
+    .leopard-intro {
+        margin-left: 110px;
+    }
+
+        .leopard-details {
+            margin-left: 110px;
+
+}
+.leopard-behavior{
+    margin-left: 110px;
+}
+.leopard-behavior iframe{
+    width: 300px;
+    height: 200px;
+}
+}
+
+.leopard-intro h1{
+    font-size: 30px;
+}
+
+.leopard-intro p{
+    font-size: 20px;
+}
+
+.leopard-details {
+    background-color: #a87811;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Soft rounded corners */
+    box-shadow: 0 2px 5px rgb(0, 0, 0); /* Subtle shadow for depth */
+    text-align: center; /* Centering text */
+}
+
+.leopard-details h1{
+    font-size: 30px;
+}
+.leopard-details h2{
+    font-size: 30px;
+}
+
+.leopard-details h3{
+    font-size: 30px;
+}
+
+.leopard-details h4{
+    font-size: 30px;
+}
+
+.leopard-details p{
+    font-size: 20px;
+}
+
+
+.leopard-behavior {
+    background-color: #a87811;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Soft rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    text-align: center; /* Centering text */
+}
+
+.leopard-behavior h1{
+    font-size: 40px;
+   
+}
+
+.leopard-behavior h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.leopard-behavior h3{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.leopard-behavior h4{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.leopard-behavior h5{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.leopard-behavior iframe{
+    width: 300px;
+    height: 300px;
+    padding-bottom: 10px;
+}
+
+.leopard-behavior a{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.leopard-behavior p{
+    font-size: 20px;
+}
+
+.leopard-venue {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Soft rounded corners */
+    box-shadow: 0 2px 5px rgb(0, 0, 0); /* Subtle shadow for depth */
+    text-align: center; /* Centering text */
+}
+.leopard-venue2{
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Soft rounded corners */
+    box-shadow: 0 2px 5px rgb(0, 0, 0); /* Subtle shadow for depth */
+    text-align: center; /* Centering text */
+}
+
+.venue-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.venue-heading2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.leopard-venue p{
+    font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+    .venue-heading {
+        font-size: 27px;
+        padding-left: 110px;
+    }
+    .venue-heading2{
+        padding-left: 100px;
+    }
+    .leopard-venue{
+        display: block;
+    }
+
+    .leopard-venue iframe{
+        width:300px;
+        
+    }
+    .leopard-venue p{
+        padding-left: 40px;
+    }
+}
+
+.leopard-intro img{
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    margin-top: 20px;
+}
+
+
+.leopard-details img{
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    margin-top: 20px;
+}
+
+.leopard-behavior img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    margin-top: 20px;
+}
+.leopard-details a{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.leopard-details a:hover{
+    color: white;
+    transition: all o.5s ease 0s;
+}
+
+.leopard-behavior a{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.leopard-behavior a:hover{
+    color: white;
+    transition: all o.5s ease 0s;
+}
+
+h2 {
+    color: #fafffc; /* A green shade matching the header */
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .leopard-intro, .leopard-details, .leopard-behavior {
+        padding: 10px;
+    }
+}
+
+
+.leopard-venue p{
+    margin-right: 90px;
+    margin-left: 90px;}
+
+/*NEW PAGE5*/
+
+.hero-banner img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjusts height automatically to maintain aspect ratio */
+    max-height: 600px; /* Maximum height; adjust as needed */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    display: block;
+}
+
+.gray-background {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #8b8b88; /* Light background to enhance readability */
+}
+main {
+    max-width: 800px; /* Adjust as needed */
+    margin: auto;
+    padding: 20px;
+}
+
+
+.Elephant-intro, .Elephant-details, .Elephant-behavior{
+    background-color: #c9c8c8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Soft rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    text-align: center; /* Centering text */
+}
+
+.elephant-venue {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Soft rounded corners */
+    box-shadow: 0 2px 5px rgb(0, 0, 0); /* Subtle shadow for depth */
+    text-align: center; /* Centering text */
+}
+.elephant-venue p{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .Elephant-intro {
+        margin-left: 110px;
+    }
+
+        .Elephant-details {
+            margin-left: 110px;
+
+}
+.Elephant-behavior{
+    margin-left: 110px;
+}
+.Elephant-behavior iframe{
+    width: 300px;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .elephant-venue{
+        display: block;
+    }
+
+    .elephant-venue iframe{
+        width:300px;
+        
+    }
+    .elephant-venue p{
+        padding-left: 90px;
+    }
+}
+
+.Elephant-details a{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Elephant-details a:hover{
+    color: white;
+    transition: all o.5s ease 0s;
+}
+
+.Elephant-behavior a{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Elephant-behavior a:hover{
+    color: white;
+    transition: all o.5s ease 0s;
+}
+
+.Elephant-intro img, .Elephant-details img, .Elephant-behavior img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #fafffc; /* A green shade matching the header */
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #22543d; /* Darker green for the footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .Elephant-intro, .Elephant-details, .Elephant-behavior {
+        padding: 10px;
+    }
+}
+
+/*NEW PAGE6*/
+
+.blue-background {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #4b5bb6; /* Light background to enhance readability */
+}
+
+.hero-banner img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Adjusts height automatically to maintain aspect ratio */
+    max-height: 600px; /* Maximum height; adjust as needed */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    display: block;
+}
+
+
+main {
+    max-width: 800px; /* Adjust as needed */
+    margin: auto;
+    padding: 20px;
+}
+
+
+.Bird-intro, .Bird-details, .Bird-behavior {
+    background-color: #3f35c9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Soft rounded corners */
+    box-shadow: 0 2px 5px rgba(190, 16, 16, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Centering text */
+}
+
+@media screen and (max-width: 600px) {
+    .Bird-intro {
+        margin-left: 110px;
+    }
+
+        .Bird-details {
+            margin-left: 110px;
+
+}
+.Bird-behavior{
+    margin-left: 110px;
+}
+.Bird-behavior iframe{
+    width: 300px;
+}
+}
+
+@media screen and (max-width: 600px) {
+    .elephant-venue{
+        display: block;
+    }
+
+    .elephant-venue iframe{
+        width:300px;
+        
+    }
+    .elephant-venue p{
+        padding-left: 90px;
+    
+}
+}
+
+.bird-venue {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px; /* Soft rounded corners */
+    box-shadow: 0 2px 5px rgb(0, 0, 0); /* Subtle shadow for depth */
+    text-align: center; /* Centering text */
+}
+.bird-venue p{
+    font-size: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Bird-details a{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Bird-details a:hover{
+    color: white;
+    transition: all o.5s ease 0s;
+}
+
+.Bird-behavior a{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Bird-behavior a:hover{
+    color: white;
+    transition: all o.5s ease 0s;
+}
+
+.Bird-intro img, .Bird-details img, .Bird-behavior img {
+    max-width: 100%; /* Responsive images */
+    height: auto;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #fafffc; /* A green shade matching the header */
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #22543d; /* Darker green for the footer */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .Bird-intro, .Bird-details, .Bird-behavior {
+        padding: 10px;
+    }
+}
+
+/* NEW PAGE7*/
+
+
+.intro-animals {
+    background-color: #484849;
+    padding: 20px;
+    padding-bottom: 10px;
+    margin-top: 90px;
+    
+}
+.intro-animals p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+    .intro-animals p{
+padding-left: 90px;
+    }
+}
+
+.featured-animals {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .featured-animals h2{
+        text-align: center;
+    }
+}
+
+.image-container-animals {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: #484849;
+}
+
+@media screen and (max-width: 600px) {
+    .image-container-animals{
+        display: block;
+        padding-left: 40px;
+    }
+}
+
+.image-container-animals img {
+    max-width: 200px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.fade-in-animals {
+    opacity: 0;
+    animation: fade 1.5s forwards;
+}
+
+.featured-animals p{
+    padding-top: 30px;
+    font-style: oblique;
+}
+
+@media screen and (max-width: 600px) {
+    .featured-animals p{
+        padding-left: 90px;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    color: #333;
+}
+
+.conservation {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.conservation-animals h2{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.conservation-animals img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: 450px;
+    
+}
+
+
+@media screen and (max-width: 600px) {
+  .conservation-animals img{
+    padding-left: 150px;
+    padding-right: 50px;
+    height: auto;
+    width: auto;
+  }
+  .conservation-animals h2{
+    
+    padding-left: 90px;
+    color: white;
+  }
+  .conservation-animals p{
+    margin-left: 70px;
+  }
+
+  .explore-more-animals p{
+    margin-left: 70px;
+  }
+  .explore-more-animals h2{
+    padding-left: 90px;
+ 
+}
+.explore-more-animals a{
+margin-left: 90px;
+
+}
+}
+
+.conservation-animals p {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #fffcfc;
+    margin-bottom: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.explore-more-animals h2 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.explore-more-animals p{
+    padding-left: 90px;
+    padding-right: 90px;
+    color: white;
+    font-size: 19px;
+}
+
+.explore-more-animals a{
+    text-align: center;
+    padding: 15px 15px;
+    margin-left: 90px;
+    color: rgb(248, 247, 245);
+    display: flex;
+    background-color: rgb(95, 116, 62);
+    text-decoration: none;
+    margin-top: 40px;
+    margin-right: 90px;
+}
+.explore-more-animals a:hover {
+    color: rgb(15, 15, 15);
+    transition: all o.5s ease 0s;
+}
+
+
+
+.grid-animals {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 column layout for mobile */
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns layout for larger screens */
+    }
+}
+
+.grid-animals div {
+    text-align: center; /* Center content within each grid item */
+    margin: 0 auto;
+}
+
+.grid-animals img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.grid-animals video {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+body {
+    background-image: url('C:\Users\Shahid\Desktop\this is my final assignment\leafs\banner.pngC:\Users\Shahid\Desktop\this is my final assignment\leafs\banner.png'); /* Update with the correct path */
+    background-size: cover; /* Cover the entire page */
+    background-attachment: fixed; /* Fix the background */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    min-height: 100vh; /* Ensure minimum height for short content pages */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.hidden {
+    display: none;
+}
+
+.w-full{
+    width: 500px;
+    height: 400px;
+}
+
+
+/* Below css is for the edit button and the text area which pops up when clicked !!!!!!!!!!!*/
+#text-editor-popup { 
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 10; /* Ensure it's on top */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+#text-editor-area {
+    width: 100%; /* Adjust percentage for desired width */
+    height: 350px; /* Adjust height as needed */
+    margin: 10px auto; /* Centers the textarea */
+    font-size: 16px; /* Adjust font size if required */
+}
+
+
+#edit-all-content {
+    background-color: rgba(95, 245, 9, 0.7); /* Green color with 0.7 opacity */
+    color: white;
+    padding: 12px 20px;
+    margin: 10px auto; /* Centers the button horizontally */
+    display: block;    /* Ensures it occupies full width available*/  
+    border: none;
+    border-radius: 25px; /* Creates the curved effect */
+    cursor: pointer;     /* Changes cursor to a hand on hover */
+    text-align: center;  /* Center text within the button */
+
+  }
+  
+  #edit-all-content:hover {
+    background-color: rgba(76, 147, 21, 0.8); /* Slightly darker on hover */
+  }
+  
+  
+  
+  
+  .newsletter-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #030303;
+    border-radius: 8px;
+    background-color: #99caa1;
+}
+
+.newsletter-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #050505;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.newsletter-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #34743b;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.newsletter-submit:hover {
+    background-color: #588970;
+}
